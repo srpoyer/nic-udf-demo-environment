@@ -8,13 +8,15 @@ If you need more information about why you need an Ingress Controller, watch thi
 
 The components of the environment include:
 
-- 3 node K8s cluster, one Control Plane (aka master) and two workers.  Each node has a KIC pod since the KIC is deployed as a DaemonSet.  The cluster is also running two applications as K8s Deployments, namely, coffee and tea.  These are simply web servers that will return web pages.
+- 3 node K8s cluster, one Control Plane (aka master) and two workers.  Each node has a KIC pod since the KIC is deployed as a DaemonSet.  The cluster is also running two applications as K8s Deployments, namely, coffee and tea.  These are simply web servers that will return web pages with some identifying information about the pods they run in.
 - front-end Nginx+ load balancer that all requests will go to and which will distribute load to the KIC pods.
-- Windows jump host to show the demo from.  You will use the Chrome browser to show various web pages and PowerShell to scale the coffee and tea apps.
+- Windows jump host to show the demo from.  You will use the Chrome browser to show various web pages and PowerShell to scale the coffee and tea apps with the `kubectl` command.
 
 Here are the currently available demo scenarios:
-- L7/HTTP Routing and Load Balancing
-- L4/TCP & UDP Load Balancing
+
+- [L7/HTTP Routing and Load Balancing](http/Readme.md)
+
+- [L4/TCP & UDP Load Balancing](tcp-udp/Readme.md)
 
 
 
