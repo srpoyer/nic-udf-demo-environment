@@ -14,9 +14,13 @@ The components of the environment include:
 
 Here are the currently available demo scenarios:
 
-- [L7/HTTP Routing and Load Balancing](http/Readme.md)
+- [L7/HTTP Routing and Load Balancing and NAP](http/Readme.md)
+
+Show path based routing.  Includes NAP running on the Ingress Controller pods.  
 
 - [L4/TCP & UDP Load Balancing](tcp-udp/Readme.md)
+
+Use dig to show both TCP and UDP load balancing.  
 
 
 
