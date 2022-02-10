@@ -17,7 +17,7 @@ Here are the steps:
 dig @10.1.1.8 -p 5353 nginx.org
 ```
 
-3. Run the following command, showing an example UDP request:
+3. Run the following command, showing an example TCP request:
 
 ```bash
 dig @10.1.1.8 -p 5353 nginx.org +tcp
